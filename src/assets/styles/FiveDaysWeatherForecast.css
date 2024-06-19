@@ -1,0 +1,126 @@
+ul {
+
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #abaed3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-forecast-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+button {
+    width: 5em;
+    align-self: center;
+    border: none;
+    background-color: #6c64fb;
+    color: wheat;
+}
+
+.location-name {
+    color: #9e616b;
+}
+
+.main-content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card {
+    border: 0.15em #24142c solid;
+    border-radius: 0.21em ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25em;
+}
+
+.error-div{
+    color: red;
+    align-self: center;
+}
+
+/* loader  */
+.loader {
+    border: 16px solid #abaed3;
+    border-radius: 50%;
+    border-top: 16px solid #9e616b;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 2%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: relative;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:640px) {
+
+
+.main-content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.card {
+    border: 0.15em #24142c solid;
+    border-radius: 0.21em ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-between;
+    padding: 0.25em;
+    gap: 1em;
+}
+
+.card h3{
+    flex-basis: 45%;
+}
+.card img{
+    flex-basis: 45%;
+}
+.card p{
+    flex-basis: 20%;
+}
+
+    
+}
